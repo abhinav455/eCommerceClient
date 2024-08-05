@@ -13,5 +13,5 @@ COPY . ./
 
 RUN npm run build
 
-CMD ["npm", "run", "serve"] #not using nginx but our own cra static server to serve 
+CMD ["npm", "run", "server"] #not using nginx but our own serve static server to serve 
 
