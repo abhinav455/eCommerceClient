@@ -1,9 +1,10 @@
 FROM node:20.16.0-alpine as builder
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+#RUN mkdir /usr/src/app
+WORKDIR /client 
+  #/usr/src/app
 
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV PATH /client/node_modules/.bin:$PATH
 
 COPY ./package.json ./
 
