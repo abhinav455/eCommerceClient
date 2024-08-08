@@ -4,7 +4,7 @@ import {jwtDecode} from "jwt-decode";
 const isDevelopment = window.location.hostname.includes("localhost");
 
 const getServer = ()=> {        //node-express server axios calls
-    return isDevelopment ? "http://localhost:5000" : "http://10.160.68.155:5000"; 
+    return isDevelopment ? "http://localhost:5000" : "https://eshop-431807.uc.r.appspot.com/"; //"http://10.160.68.155:5000"; 
                 //it will call this to get backend server using axios in react either with 
                   //1)my private ip as this on vedant browser url(if not react, console fetch uses vedant private ip) 
 
