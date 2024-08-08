@@ -11,7 +11,7 @@ const getServer = ()=> {        //node-express server axios calls
 };
 
 const getClientServer = ()=> {  //stripe client redirect url
-    return isDevelopment ? "http://localhost:3000" : "http://10.160.68.155:3000";
+    return isDevelopment ? "http://localhost:3000" : "https://client-dot-eshop-431807.uc.r.appspot.com";
 };
 
 const decodeUser = () => {
