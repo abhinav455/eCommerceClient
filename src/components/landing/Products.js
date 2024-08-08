@@ -14,10 +14,10 @@ const Products = connect(mapStateToProps, {getProducts})((props) => {
 
   const firstUpdate = useRef(true);  
   useEffect(() => {  
-    if(firstUpdate.current){
-        firstUpdate.current = false;
-        return;
-    }
+    // if(firstUpdate.current){
+    //     firstUpdate.current = false;
+    //     return;
+    // }
     
     //componentdidmount   
     props.getProducts();

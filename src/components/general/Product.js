@@ -22,6 +22,7 @@ const Product = ({product, description, link}) => {
             }
         >
             <Meta title={product.name} description={description}/>
+            <Link to={""}>Add Images</Link>
         </Card>
     </Link> 
    </div>  
@@ -31,7 +32,7 @@ const Product = ({product, description, link}) => {
 Product.propTypes = {
     product: propTypes.object.isRequired,
     description: propTypes.object.isRequired,
-    buttonName: propTypes.string,
+    //buttonName: propTypes.string,
 }
 
 export default Product;

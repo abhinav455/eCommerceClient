@@ -15,10 +15,10 @@ const Products = connect(mapStateToProps, {getInstructorProducts})((props) => {
 
     let firstUpdate = useRef(true);  
     useEffect(() => {  
-      if(firstUpdate.current){
-          firstUpdate.current = false;
-          return;
-      }
+      // if(firstUpdate.current){
+      //     firstUpdate.current = false;
+      //     return;
+      // }
       
       //componentdidmount   
       props.getInstructorProducts(decodeUser().user.id);
@@ -62,7 +62,7 @@ const Products = connect(mapStateToProps, {getInstructorProducts})((props) => {
           key={index}
           product={product}
           description={productDetails(product)}
-         // uploadImages={`/dashboard/products/${product._id}/addImages`}
+          uploadImages={`/dashboard/products/${product._id}/addImages`}
          // thumbnail={product.thumbnail}
          // showBtn={true}
         />
