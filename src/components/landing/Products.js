@@ -50,7 +50,7 @@ const Products = connect(mapStateToProps, {getProducts})((props) => {
   }; 
 
  return (
-    <div className="container">
+    <div className="container-flex">
         <div className="row">
             {products.map((product, index) => {
                 return (

@@ -63,8 +63,7 @@ const Products = connect(mapStateToProps, {getInstructorProducts})((props) => {
           product={product}
           description={productDetails(product)}
           uploadImages={`/dashboard/products/${product._id}/addImages`}
-         // thumbnail={product.thumbnail}
-         // showBtn={true}
+          showBtn={true}
         />
       ))}
     </div>
